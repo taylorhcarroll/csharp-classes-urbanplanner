@@ -1,0 +1,10 @@
+/Users/taylorcarroll/workspace/C37/charp-urban-planner/bin/Debug/netcoreapp3.1/charp-urban-planner.deps.json
+/Users/taylorcarroll/workspace/C37/charp-urban-planner/bin/Debug/netcoreapp3.1/charp-urban-planner.runtimeconfig.json
+/Users/taylorcarroll/workspace/C37/charp-urban-planner/bin/Debug/netcoreapp3.1/charp-urban-planner.runtimeconfig.dev.json
+/Users/taylorcarroll/workspace/C37/charp-urban-planner/bin/Debug/netcoreapp3.1/charp-urban-planner.dll
+/Users/taylorcarroll/workspace/C37/charp-urban-planner/bin/Debug/netcoreapp3.1/charp-urban-planner.pdb
+/Users/taylorcarroll/workspace/C37/charp-urban-planner/obj/Debug/netcoreapp3.1/charp-urban-planner.csprojAssemblyReference.cache
+/Users/taylorcarroll/workspace/C37/charp-urban-planner/obj/Debug/netcoreapp3.1/charp-urban-planner.AssemblyInfoInputs.cache
+/Users/taylorcarroll/workspace/C37/charp-urban-planner/obj/Debug/netcoreapp3.1/charp-urban-planner.AssemblyInfo.cs
+/Users/taylorcarroll/workspace/C37/charp-urban-planner/obj/Debug/netcoreapp3.1/charp-urban-planner.dll
+/Users/taylorcarroll/workspace/C37/charp-urban-planner/obj/Debug/netcoreapp3.1/charp-urban-planner.pdb
