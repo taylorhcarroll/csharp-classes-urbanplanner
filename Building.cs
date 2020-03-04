@@ -8,9 +8,11 @@ namespace charp_urban_planner
 
         private DateTime _dateConstructed { get; set; }
 
-        private string _address { get; set; }
+        internal string _address { get; set; }
 
         private string _owner { get; set; }
+
+        public string _name { get; set; }
 
         public int Stories { get; set; }
 
