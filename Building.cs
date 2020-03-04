@@ -8,11 +8,11 @@ namespace charp_urban_planner
 
         private DateTime _dateConstructed { get; set; }
 
-        internal string _address { get; set; }
+        public string Address { get; set; }
 
         private string _owner { get; set; }
 
-        public string _name { get; set; }
+        public string Name { get; set; }
 
         public int Stories { get; set; }
 
@@ -29,10 +29,10 @@ namespace charp_urban_planner
         //Constructor
         public Building(string address)
         {
-            _address = address;
+            Address = address;
         }
         // Methods
-        public void Construct()
+        public void Build()
         {
             _dateConstructed = DateTime.Now;
 
@@ -45,7 +45,7 @@ namespace charp_urban_planner
         {
             get
             {
-                return ($"{_address} Designed by:{_desginer} Date Constructed:{_dateConstructed} Owned by:{_owner} Volume:{Volume} ");
+                return ($"{Address} Designed by:{_desginer} Date Constructed:{_dateConstructed} Owned by:{_owner} Volume:{Volume} ");
             }
 
         }

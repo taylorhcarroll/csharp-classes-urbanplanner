@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+
 
 namespace charp_urban_planner
 {
@@ -18,7 +20,7 @@ namespace charp_urban_planner
             };
             Building FiveOneTwoEigth = new Building("512 8th Avenue")
             {
-                _name = "FiveOneTwoEigth",
+                Name = "FiveOneTwoEigth",
                 Width = 50,
                 Depth = 40,
                 Stories = 4
@@ -26,21 +28,21 @@ namespace charp_urban_planner
             };
             Building BatmanBuilding = new Building("AT&T Building, Downtown Ave")
             {
-                _name = "BatmanBuilding",
+                Name = "BatmanBuilding",
                 Width = 300,
                 Depth = 400,
                 Stories = 13
 
             };
             Building NSS = new Building("301 Plus Park Blvd");
-            NSS._name = "NSS";
+            NSS.Name = "NSS";
             NSS.Width = 200;
             NSS.Depth = 100;
             NSS.Stories = 6;
 
-            NSS.Construct();
-            FiveOneTwoEigth.Construct();
-            BatmanBuilding.Construct();
+            NSS.Build();
+            FiveOneTwoEigth.Build();
+            BatmanBuilding.Build();
             NSS.Purchase("John Wark");
             FiveOneTwoEigth.Purchase("Johnny Bravo");
             BatmanBuilding.Purchase("Bruce Wayne");
@@ -49,18 +51,20 @@ namespace charp_urban_planner
             Nashville.addBuilding(BatmanBuilding);
             Ellivhsan.addBuilding(FiveOneTwoEigth);
 
-            Console.WriteLine($"{Nashville.Name} has the following buildings: ");
-            foreach (Building building in Nashville.Buildings)
-            {
-                Console.WriteLine($"{building._name} located at: {building._address}");
-            }
+            List<City> cities = new List<City>()
+             {
+                Nashville,
+                Ellivhsan
+            };
 
-            Console.WriteLine($"{Ellivhsan.Name} has the following buildings: ");
-            foreach (Building building in Ellivhsan.Buildings)
+            foreach (City city in cities)
             {
-                Console.WriteLine($"{building._name} located at: {building._address}");
+                Console.WriteLine($"{city.Name} has the following buildings: ");
+                foreach (Building building in city.Buildings)
+                {
+                    Console.WriteLine($"{building.Name} located at: {building.Address}");
+                }
             }
-
         }
     }
 }
